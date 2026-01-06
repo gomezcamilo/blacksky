@@ -197,6 +197,38 @@
             width: 100%;
         }
 
+        /* Login Button Style */
+        .nav-login-btn {
+            background: var(--neon-purple) !important;
+            color: var(--bg-primary) !important;
+            padding: 0.5rem 1.2rem !important;
+            border-radius: 6px;
+            font-weight: 700;
+            box-shadow: 0 0 15px rgba(191, 0, 255, 0.4);
+            transition: all 0.3s ease !important;
+        }
+
+        .nav-login-btn:hover {
+            background: var(--neon-blue) !important;
+            box-shadow: 0 0 25px rgba(0, 255, 255, 0.6);
+            transform: translateY(-2px);
+        }
+
+        .nav-login-btn::after {
+            display: none !important;
+        }
+
+        .mobile-login-btn {
+            background: var(--neon-purple);
+            color: var(--bg-primary) !important;
+            padding: 0.8rem 1.5rem;
+            border-radius: 8px;
+            font-weight: 700;
+            text-align: center;
+            margin-top: 1rem;
+            box-shadow: 0 0 20px rgba(191, 0, 255, 0.5);
+        }
+
         .menu-toggle {
             display: none;
             flex-direction: column;
@@ -1672,6 +1704,7 @@
             <li><a href="#donate">Apóyanos</a></li>
             <li><a href="#investors">Inversores</a></li>
             <li><a href="https://molocorp.byethost16.com/" target="_blank">MOLOWORLD</a></li>
+            <li><a href="/login" class="nav-login-btn">LOGIN</a></li>
         </ul>
         <div class="menu-toggle" id="menuToggle">
             <span></span>
@@ -1688,6 +1721,7 @@
         <a href="#donate">Apóyanos</a>
         <a href="#investors">Inversores</a>
         <a href="https://molocorp.byethost16.com/" target="_blank">MOLOWORLD</a>
+        <a href="/login" class="mobile-login-btn">LOGIN</a>
     </div>
 
     <!-- Hero Section -->
