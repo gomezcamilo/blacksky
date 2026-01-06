@@ -1,15 +1,21 @@
 -- =============================================
 -- BLACK SKY - Database Schema
--- MySQL 8.0+ / MariaDB 10.4+
+-- MariaDB 11.4+ (Spaceship Hosting)
 -- Red Social Cyberpunk con Encriptación
 -- =============================================
 
--- Crear la base de datos
-CREATE DATABASE IF NOT EXISTS black_sky_db
-CHARACTER SET utf8mb4
-COLLATE utf8mb4_unicode_ci;
+-- =============================================
+-- INSTRUCCIONES PARA SPACESHIP HOSTING:
+-- =============================================
+-- 1. Primero selecciona tu base de datos en el panel izquierdo
+--    (ej: oebtybobrs_jo6df98 o oebtybobrs_joe291e)
+-- 2. Luego ve a la pestaña "SQL" y pega este código
+-- 3. Ejecuta el script
+-- =============================================
 
-USE black_sky_db;
+-- Configurar charset para la conexión
+SET NAMES utf8mb4;
+SET CHARACTER SET utf8mb4;
 
 -- =============================================
 -- TABLA: users
@@ -490,30 +496,19 @@ INSERT INTO community_members (id, community_id, user_id, role) VALUES
 -- =============================================
 
 /*
-INSTRUCCIONES PARA phpMyAdmin:
-1. Copia todo este código SQL
-2. Ve a phpMyAdmin
-3. Haz clic en "SQL" en la barra superior
-4. Pega el código y ejecuta
-5. La base de datos 'black_sky_db' se creará con todas las tablas
+INSTRUCCIONES PARA phpMyAdmin (Spaceship):
+1. En phpMyAdmin, haz clic en una de tus bases de datos:
+   - oebtybobrs_jo6df98
+   - oebtybobrs_joe291e
+2. Haz clic en la pestaña "SQL" arriba
+3. Pega TODO este código
+4. Haz clic en "Continuar" o "Ejecutar"
 
-TABLAS INCLUIDAS:
-- users (con código de recuperación y VIP)
-- user_sessions
-- followers
-- posts (con encriptación y multimedia)
-- post_likes
-- comments
-- comment_likes
-- saved_posts
-- communities
-- community_members
-- community_messages
-- community_message_likes
-- boards
-- board_likes
-- messages (DMs)
-- notifications
-- vip_subscriptions
-- api_keys
+TABLAS QUE SE CREARÁN:
+- users, user_sessions, followers
+- posts, post_likes, comments, comment_likes, saved_posts
+- communities, community_members, community_messages, community_message_likes
+- boards, board_likes
+- messages, notifications
+- vip_subscriptions, api_keys
 */
