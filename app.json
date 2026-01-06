@@ -1,0 +1,56 @@
+{
+  "expo": {
+    "name": "BLACK SKY",
+    "slug": "blacksky",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/images/icon.png",
+    "scheme": "blacksky",
+    "userInterfaceStyle": "automatic",
+    "newArchEnabled": true,
+    "splash": {
+      "image": "./assets/images/molocorp.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#0A0A0A"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "splash": {
+        "image": "./assets/images/molocorp.png",
+        "resizeMode": "contain",
+        "backgroundColor": "#0A0A0A"
+      }
+    },
+    "android": {
+      "splash": {
+        "image": "./assets/images/molocorp.png",
+        "resizeMode": "contain",
+        "backgroundColor": "#0A0A0A"
+      }
+    },
+    "web": {
+      "bundler": "metro",
+      "output": "single",
+      "favicon": "./assets/images/molocorp.png",
+      "splash": {
+        "image": "./assets/images/molocorp.png",
+        "resizeMode": "contain",
+        "backgroundColor": "#0A0A0A"
+      }
+    },
+    "plugins": [
+      "expo-router",
+      "expo-font",
+      "expo-web-browser",
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "Allow $(PRODUCT_NAME) to access your photos to update your profile."
+        }
+      ]
+    ],
+    "experiments": {
+      "typedRoutes": true
+    }
+  }
+}
